@@ -8,15 +8,15 @@ import { gmail_v1 as gmailV1, google } from 'googleapis';
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/gmail.send'];
-// The file token.json stores the user's access and refresh tokens, and is
-// created automatically when the authorization flow completes for the first
+// The file token.json stores the user's access & refresh tokens, & is
+// created auto. when the auth flow done for the first
 // time.
 const TOKEN_PATH = 'token.json';
 const readFileAsync = promisify(fs.readFile);
 const writeFileAsync = promisify(fs.writeFile);
 
 /**
- * Get and store new token after prompting for user authorization, and then
+ * Get & store new token after prompting for user auth, & then
  * execute the given callback with the authorized OAuth2 client.
  * @param {google.auth.OAuth2} oAuth2Client The OAuth2 client to get token for.
  * @param {getEventsCallback} callback The callback for the authorized client.
@@ -50,9 +50,9 @@ async function getNewToken(oAuth2Client, callback) {
 }
 
 /**
- * Create an OAuth2 client with the given credentials, and then execute the
+ * Create an OAuth2 client with the given credentials, & then execute the
  * given callback function.
- * @param {Object} credentials The authorization client credentials.
+ * @param {Object} credentials The auth client credentials.
  * @param {function} callback The callback to call with the authorized client.
  */
 async function authorize(credentials, callback) {
