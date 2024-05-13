@@ -3,7 +3,7 @@ import { promisify } from 'util';
 import { createClient } from 'redis';
 
 /**
- * Represents a Redis client.
+ * Reps a Redis client.
  */
 class RedisClient {
   /**
@@ -22,7 +22,7 @@ class RedisClient {
   }
 
   /**
-   * Checks if this client's connection to the Redis server is active.
+   * Checks if this client's conn to the Redis server is active.
    * @returns {boolean}
    */
   isAlive() {
@@ -31,7 +31,7 @@ class RedisClient {
 
   /**
    * Retrieves the value of a given key.
-   * @param {String} key The key of the item to retrieve.
+   * @param {String} The key of the item to retrieve.
    * @returns {String | Object}
    */
   async get(key) {
@@ -39,8 +39,8 @@ class RedisClient {
   }
 
   /**
-   * Stores a key and its value along with an expiration time.
-   * @param {String} key The key of the item to store.
+   * Stores a key & its value along with an expiration time.
+   * @param {String} The key of the item to store.
    * @param {String | Number | Boolean} value The item to store.
    * @param {Number} duration The expiration time of the item in seconds.
    * @returns {Promise<void>}
@@ -52,7 +52,7 @@ class RedisClient {
 
   /**
    * Removes the value of a given key.
-   * @param {String} key The key of the item to remove.
+   * @param {String} The key of the item to remove.
    * @returns {Promise<void>}
    */
   async del(key) {
