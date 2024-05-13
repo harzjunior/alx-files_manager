@@ -35,4 +35,3 @@ const injectRoutes = (api) => {
 };
 
 export default injectRoutes;
-
